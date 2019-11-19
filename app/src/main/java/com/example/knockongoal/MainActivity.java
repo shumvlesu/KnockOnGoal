@@ -36,18 +36,17 @@ public class MainActivity extends AppCompatActivity {
                 gif.setRotation(gif.getRotation() + 180);
 
                 Intent i = new Intent(Intent.ACTION_CALL);
-                i.setData(Uri.parse("tel:+79180106162"));
+                //Калитка на рахманинова
+                //i.setData(Uri.parse("tel:+79385162364"));
+                //Калитка на Есенина
+                //i.setData(Uri.parse("tel:+79385162365"));
+                //Ворота на рахманинова
+                i.setData(Uri.parse("tel:+79385159516"));
                 if (ContextCompat.checkSelfPermission(getApplicationContext(), CALL_PHONE) == PackageManager.PERMISSION_GRANTED) {
                     startActivity(i);
                 } else {
                     requestPermissions(new String[]{CALL_PHONE}, 1);
                 }
-               // if (checkSelfPermission(Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-              //      Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:+79180106162"));
-               //     startActivity(intent);
-               // }
-
-
 
 
             }
