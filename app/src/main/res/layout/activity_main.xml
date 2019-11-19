@@ -5,18 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/gradient"
+    android:background="@drawable/gradient">
 
-
-
-    >
-
-    <com.cunoraz.gifview.library.GifView
-        android:id="@+id/gif1"
-        android:layout_width="139dp"
-        android:layout_height="19dp"
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="347dp"
+        android:layout_height="265dp"
+        android:src="@drawable/d1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.36" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
