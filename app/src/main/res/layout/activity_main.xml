@@ -8,6 +8,7 @@
     android:background="@drawable/gradient">
 
     <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/mushroom"
         android:layout_width="347dp"
         android:layout_height="265dp"
         android:src="@drawable/d1"
