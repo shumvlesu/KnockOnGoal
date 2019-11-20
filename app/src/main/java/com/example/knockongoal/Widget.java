@@ -9,8 +9,6 @@ import android.util.Log;
 import android.widget.RemoteViews;
 import android.widget.Toast;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class Widget extends AppWidgetProvider {
 
@@ -24,13 +22,22 @@ public class Widget extends AppWidgetProvider {
         //Подготавливаем Intent для Broadcast
         Intent active = new Intent(context, Widget.class);
         active.setAction(ACTION_WIDGET_RECEIVER);
-        active.putExtra("msg", "Hello Habrahabr");
+        active.putExtra("msg", "Это кнопка 1");
 
         //создаем наше событие
         PendingIntent actionPendingIntent = PendingIntent.getBroadcast(context, 0, active, 0);
 
+        //Подготавливаем Intent для Broadcast
+        Intent active2 = new Intent(context, Widget.class);
+        active2.setAction(ACTION_WIDGET_RECEIVER);
+        active2.putExtra("msg", "Это кнопка 2");
+
+        //создаем наше событие
+        PendingIntent actionPendingIntent2 = PendingIntent.getBroadcast(context, 0, active2, 0);
+
         //регистрируем наше событие
         remoteViews.setOnClickPendingIntent(R.id.button1, actionPendingIntent);
+        remoteViews.setOnClickPendingIntent(R.id.button2, actionPendingIntent2);
 
         //обновляем виджет
         appWidgetManager.updateAppWidget(appWidgetIds, remoteViews);
