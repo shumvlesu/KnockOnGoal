@@ -24,11 +24,17 @@
                 <category android:name="android.permission.CALL_PRIVILEGED"/>
             </intent-filter>
         </activity>
-        <receiver android:name=".Widget">
+        <receiver
+            android:name=".Widget">
             <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"></action>
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE">
+                </action>
             </intent-filter>
-            <meta-data android:name="android.appwidget.AppWidgetProvider" android:resource="@xml/widget"/>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget">
+            </meta-data>
         </receiver>
 
     </application>
