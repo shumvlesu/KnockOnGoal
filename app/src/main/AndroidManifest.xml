@@ -13,24 +13,20 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
                 <!--  общая телефония -->
                 <category android:name="android.hardware.telephony"/>
-
                 <!--  CDMA-телефония -->
                 <category android:name="android.hardware.telephony.cdma"/>
-
                 <!--  GSM-телефония -->
                 <category android:name="android.hardware.telephony.gsm"/>
                 <category android:name="android.permission.CALL_PHONE" />
                 <category android:name="android.permission.CALL_PRIVILEGED"/>
-
             </intent-filter>
         </activity>
         <receiver android:name=".Widget">
             <intent-filter>
-                <action android:name="android.appWidget.action.APPWIDGET_UPDATE"></action>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"></action>
             </intent-filter>
             <meta-data android:name="android.appwidget.AppWidgetProvider" android:resource="@xml/widget"/>
         </receiver>
