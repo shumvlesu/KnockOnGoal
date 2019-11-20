@@ -28,6 +28,13 @@
 
             </intent-filter>
         </activity>
+        <receiver android:name=".Widget">
+            <intent-filter>
+                <action android:name="android.appWidget.action.APPWIDGET_UPDATE"></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.AppWidgetProvider" android:resource="@xml/widget"/>
+        </receiver>
+
     </application>
 
 </manifest>
