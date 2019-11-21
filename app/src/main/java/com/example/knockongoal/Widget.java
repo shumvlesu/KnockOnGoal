@@ -94,7 +94,7 @@ public class Widget extends AppWidgetProvider {
             } else {
                // requestPermissions(new String[]{CALL_PHONE}, 1);
             }
-            Toast.makeText(context, msg, Toast.LENGTH_LONG).show();
+            Toast.makeText(context, msg, Toast.LENGTH_SHORT).show();
         }
         super.onReceive(context, intent);
     }
