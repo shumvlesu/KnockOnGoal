@@ -76,7 +76,10 @@ public class Widget extends AppWidgetProvider {
                 Log.e("Error", "msg = null");
             }
 
+            //Этот интент собственно звонилка телефона.
             Intent i = new Intent(Intent.ACTION_CALL);
+
+            //вот без этого флага задачи интент звонилки точно не запустится
             i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 
             if (msg.equals("Калитка на рахманинова")) {
@@ -90,10 +93,12 @@ public class Widget extends AppWidgetProvider {
             }
 
             if (ContextCompat.checkSelfPermission(context.getApplicationContext(), CALL_PHONE) == PackageManager.PERMISSION_GRANTED) {
+                //Здесь собственно интент и вызывает звонилку.
                 context.startActivity(i);
             } else {
-               // requestPermissions(new String[]{CALL_PHONE}, 1);
+                //requestPermissions(new String[]{CALL_PHONE},1 );
             }
+            //Говорим пользователю что он собственно открыл.
             Toast.makeText(context, msg, Toast.LENGTH_SHORT).show();
         }
         super.onReceive(context, intent);
