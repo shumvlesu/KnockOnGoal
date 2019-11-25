@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Постучи в Ворота</string>
+    <string name="name1">Калитка на рахманинова</string>
+    <string name="name2">Калитка на Есенина</string>
+    <string name="name3">Ворота на рахманинова</string>
+    <string name="Text">Для удобства использования, создайте виджет этого приложения у себя на экране.</string>
+    <string name="HI">Здравствуйте!</string>
 </resources>

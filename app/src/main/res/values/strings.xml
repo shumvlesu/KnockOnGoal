@@ -1,3 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">KnockOnGoal</string>
+    <string name="name1">kalitka on rohmaninov st.</string>
+    <string name="name2">kalitka on esenina st.</string>
+    <string name="name3">gate on rohmaninov st.</string>
+    <string name="Text">Hi</string>
+    <string name="HI">HELLO!</string>
 </resources>
