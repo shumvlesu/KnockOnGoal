@@ -53,7 +53,7 @@
             android:layout_weight="1"
             android:text="@string/name1"
             android:textAlignment="center"
-            android:textColor="@android:color/background_dark"
+            android:textColor="@color/buttonBackground"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -64,7 +64,7 @@
             android:layout_weight="1"
             android:text="@string/name3"
             android:textAlignment="center"
-            android:textColor="@android:color/background_dark"
+            android:textColor="@color/buttonBackground"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -75,7 +75,7 @@
             android:layout_weight="1"
             android:text="@string/name2"
             android:textAlignment="center"
-            android:textColor="@android:color/background_dark"
+            android:textColor="@color/buttonBackground"
             android:textSize="18sp"
             android:textStyle="bold" />
     </LinearLayout>
