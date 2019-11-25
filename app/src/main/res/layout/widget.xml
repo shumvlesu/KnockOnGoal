@@ -3,7 +3,19 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_weight="1"
-    android:orientation="vertical">
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+<ripple android:color="?attr/colorControlHighlight">
+<item>
+    <shape android:shape="rectangle"
+        android:tint="#0091ea">
+        <corners android:radius="10dp"/>
+        <solid android:color="#1a237e"/>
+        <padding android:bottom="6dp"/>
+    </shape>
+</item>
+</ripple>
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -53,7 +65,7 @@
             android:layout_weight="1"
             android:text="@string/name1"
             android:textAlignment="center"
-            android:textColor="@color/buttonBackground"
+            android:textColor="@color/colorAccent"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -64,7 +76,7 @@
             android:layout_weight="1"
             android:text="@string/name3"
             android:textAlignment="center"
-            android:textColor="@color/buttonBackground"
+            android:textColor="@color/colorAccent"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -75,7 +87,7 @@
             android:layout_weight="1"
             android:text="@string/name2"
             android:textAlignment="center"
-            android:textColor="@color/buttonBackground"
+            android:textColor="@color/colorAccent"
             android:textSize="18sp"
             android:textStyle="bold" />
     </LinearLayout>
