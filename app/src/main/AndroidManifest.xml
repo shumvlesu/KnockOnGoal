@@ -14,14 +14,9 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
-                <!--  общая телефония -->
-                <category android:name="android.hardware.telephony"/>
-                <!--  CDMA-телефония -->
-                <category android:name="android.hardware.telephony.cdma"/>
-                <!--  GSM-телефония -->
-                <category android:name="android.hardware.telephony.gsm"/>
+
                 <category android:name="android.permission.CALL_PHONE" />
-                <category android:name="android.permission.CALL_PRIVILEGED"/>
+                
             </intent-filter>
         </activity>
         <receiver
