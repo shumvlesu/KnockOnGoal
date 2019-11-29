@@ -33,7 +33,7 @@
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="122dp"
+            android:layout_width="110dp"
             android:layout_height="64dp"
             android:layout_weight="1"
             android:background="@drawable/green"
@@ -74,7 +74,7 @@
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="122dp"
+            android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/name2"
